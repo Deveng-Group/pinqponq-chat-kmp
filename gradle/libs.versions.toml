@@ -15,6 +15,7 @@ hotReload = "1.0.0-alpha09"
 vanniktech = "0.30.0"
 kotlinx-coroutines-swing = "1.10.1"
 pinqponq = "1.1.0"
+devengNetworkingKmp = "2.8.49"
 
 [libraries]
 
@@ -23,6 +24,8 @@ androidx-uitest-testManifest = { module = "androidx.compose.ui:ui-test-manifest"
 androidx-uitest-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "androidx-uiTest" }
 kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines-swing" }
 pinqponq-chat = { module = "global.deveng:pinqponq-chat-kmp", version.ref = "pinqponq" }
+deveng-networking-kmp = { module = "global.deveng:networking-kmp", version.ref = "devengNetworkingKmp" }
+
 
 
 [plugins]

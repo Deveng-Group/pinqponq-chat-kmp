@@ -67,6 +67,7 @@ kotlin {
 
         commonMain.dependencies {
             implementation(compose.material3)
+            implementation(libs.deveng.networking.kmp)
 
         }
 
