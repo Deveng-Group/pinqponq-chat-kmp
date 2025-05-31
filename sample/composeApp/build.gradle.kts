@@ -63,6 +63,7 @@ kotlin {
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
             implementation(project(":pinqponqchat"))
+            //implementation(libs.pinqponq.chat)
         }
 
         androidMain.dependencies {
