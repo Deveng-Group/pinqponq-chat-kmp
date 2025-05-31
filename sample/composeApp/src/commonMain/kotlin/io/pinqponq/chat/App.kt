@@ -22,6 +22,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 import pinqponq_chat_kmp.sample.composeapp.generated.resources.Res
 import pinqponq_chat_kmp.sample.composeapp.generated.resources.ic_rotate_right
 import pinqponqchat.PinqponqChatModule
+import pinqponqchat.components.ChatMessageItem
 
 @Preview
 @Composable
@@ -45,6 +46,11 @@ internal fun App() = AppTheme {
                 Spacer(Modifier.size(ButtonDefaults.IconSpacing))
 
             }
+        )
+
+        ChatMessageItem(
+            message = "Hello, this is a test message!",
+            isSentByUser = true
         )
     }
 }

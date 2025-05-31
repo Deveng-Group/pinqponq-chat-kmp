@@ -7,6 +7,8 @@ plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.android.library)
     alias(libs.plugins.vanniktech.mavenPublish)
+    alias(libs.plugins.compose)
+    alias(libs.plugins.compose.compiler)
 }
 
 group = "io.pinqponq"
@@ -65,7 +67,7 @@ kotlin {
         }
 
         commonMain.dependencies {
-
+            implementation(compose.material3)
 
         }
 
@@ -84,6 +86,10 @@ android {
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
+    }
+
+    buildFeatures {
+        compose = true
     }
 }
 
