@@ -11,7 +11,7 @@ plugins {
     alias(libs.plugins.compose.compiler)
 }
 
-group = "io.pinqponq"
+group = "global.deveng"
 version = generateVersionName()
 
 kotlin {
@@ -82,7 +82,7 @@ kotlin {
 }
 
 android {
-    namespace = "io.pinqponq.chat"
+    namespace = "io.pinqponq"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -100,7 +100,7 @@ mavenPublishing {
 
     coordinates(
         group.toString(),
-        "chat-kmp",
+        "pinqponq-chat-kmp",
         version.toString()
     )
 
@@ -108,7 +108,7 @@ mavenPublishing {
         name = "pinqponq Chat KMP"
         description = "pinqponq chat library for Deveng projects"
         inceptionYear = "2024"
-        url = "https://github.com/furkanturkn/pinqponq-chat-kmp/"
+        url = "https://github.com/Deveng-Group/pinqponq-chat-kmp/"
         licenses {
             license {
                 name = "The Apache License, Version 2.0"
@@ -124,10 +124,10 @@ mavenPublishing {
             }
         }
         scm {
-            url = "https://github.com/furkanturkn/pinqponq-chat-kmp/"
-            connection = "scm:git:git://github.com/furkanturkn/pinqponq-chat-kmp.git"
+            url = "https://github.com/Deveng-Group/pinqponq-chat-kmp/"
+            connection = "scm:git:git://github.com/Deveng-Group/pinqponq-chat-kmp.git"
             developerConnection =
-                "scm:git:ssh://git@github.com/furkanturkn/pinqponq-chat-kmp.git"
+                "scm:git:ssh://git@github.com/Deveng-Group/pinqponq-chat-kmp.git"
         }
     }
 }
