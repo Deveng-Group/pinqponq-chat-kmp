@@ -136,7 +136,6 @@ mavenPublishing {
 fun generateVersionName(): String {
     val versionMajor = libs.versions.app.version.major.get()
     val appVersionCode = libs.versions.app.version.code.get()
-
     val minorVersion = libs.versions.app.minor.version.get()
 
     return StringBuilder().apply {
