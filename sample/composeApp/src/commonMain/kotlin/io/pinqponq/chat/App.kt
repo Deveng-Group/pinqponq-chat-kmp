@@ -1,14 +1,6 @@
 package io.pinqponq.chat
 
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.safeDrawing
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.widthIn
-import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.Icon
@@ -22,7 +14,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 import pinqponq_chat_kmp.sample.composeapp.generated.resources.Res
 import pinqponq_chat_kmp.sample.composeapp.generated.resources.ic_rotate_right
 import pinqponqchat.PinqponqChatModule
-import pinqponqchat.components.ChatMessageItem
+import pinqponqchat.components.ChatPage
 
 @Preview
 @Composable
@@ -48,9 +40,7 @@ internal fun App() = AppTheme {
             }
         )
 
-        ChatMessageItem(
-            message = "Hello, this is a test message!",
-            isSentByUser = true
-        )
+        ChatPage()
+
     }
 }
